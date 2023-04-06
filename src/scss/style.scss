@@ -1,0 +1,25 @@
+@import './fonts';
+@import './variables';
+
+@import './promo';
+@import './menu';
+@import './content';
+@import './navigation';
+@import './header';
+@import './main';
+@import './repair';
+@import './price';
+@import './footer';
+@import './modal';
+@import './media';
+
+* {
+  font-family: 'Regular';
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bgColor;
+  color: $textColor;
+}

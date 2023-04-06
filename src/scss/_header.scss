@@ -1,0 +1,37 @@
+.container-content {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__title {
+      font-family: 'Bold';
+      font-size: 28px;
+      margin-left: 0;
+      padding-left: 30px;
+
+      &::before {
+        content: '';
+        border: 3px solid $menuActive;
+        height: 40px;
+        border-radius: 2px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+    }
+
+    &__item {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+
+      &:first-of-type {
+        margin-right: 30px;
+      }
+    }
+  }
+}
