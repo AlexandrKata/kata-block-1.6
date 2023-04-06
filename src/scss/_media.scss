@@ -213,6 +213,7 @@
   }
   .container-content {
     max-width: 320px;
+    overflow-x: hidden;
     .navigation {
       position: sticky;
       &__item:nth-of-type(3) {
