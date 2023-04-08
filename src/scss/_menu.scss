@@ -1,22 +1,40 @@
 .container-menu {
-  padding: 40px 15px 32px 15px;
+  width: 300px;
   &.show {
+    animation-duration: 1.5s;
+    animation-name: show;
     display: block;
     padding: 0;
-    background: $bgColor;
+    background: $btnColorText;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
-    padding: 35px 25px;
+    .menu {
+      .menu-header {
+        padding: 20px 25px 0px 25px;
+      }
+      .menu-list {
+        &__item {
+          &.active {
+            display: none;
+          }
+        }
+      }
+    }
   }
-  width: 300px;
+  &.hide {
+    animation-duration: 1.5s;
+    animation-name: hide;
+  }
+
   .menu {
     .menu-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 40px 20px 0 20px;
       &__item {
         &.burgerClose {
           display: none;
@@ -28,7 +46,8 @@
       }
     }
     .menu-list {
-      padding: 50px 0 0 0;
+      padding: 0px;
+      padding: 50px 20px 0 20px;
       list-style-type: none;
       &__item {
         padding-bottom: 30px;
@@ -42,10 +61,22 @@
             text-decoration: underline;
           }
         }
+        &.active {
+          a {
+            color: $textColorLight;
+            &::before {
+              content: '';
+              border: 2px solid $menuActive;
+              height: 28px;
+              border-radius: 2px;
+              margin-right: 10px;
+            }
+          }
+        }
       }
     }
     .menu-footer {
-      padding-top: 240px;
+      padding: 240px 20px 0 20px;
       &__icons {
         display: flex;
         justify-content: flex-start;
@@ -83,5 +114,33 @@
         }
       }
     }
+  }
+}
+
+@keyframes show {
+  from {
+    position: absolute;
+    top: 0;
+    left: -300px;
+  }
+
+  to {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes hide {
+  from {
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+
+  to {
+    position: absolute;
+    top: 0;
+    left: -300px;
   }
 }

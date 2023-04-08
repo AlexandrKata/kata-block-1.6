@@ -1,18 +1,28 @@
 function showMore() {
-  const link = document.querySelector('.tabs-link'),
-    linkParent = document.querySelector('.tabs-text'),
-    container = document.querySelector('.container-main')
+  const linkMore = document.querySelector('.tabs-links__more'),
+    linkHide = document.querySelector('.tabs-links__hide'),
+    linksParent = document.querySelector('.tabs-text')
 
   function show() {
-    link.addEventListener('click', (e) => {
+    linkMore.addEventListener('click', (e) => {
       e.preventDefault()
-      link.classList.add('hide')
-      linkParent.classList.add('show')
-      container.classList.add('show')
+      linkMore.classList.add('hide')
+      linkHide.classList.remove('hide')
+      linksParent.classList.add('show')
+    })
+  }
+
+  function hide() {
+    linkHide.addEventListener('click', (e) => {
+      e.preventDefault()
+      linkHide.classList.add('hide')
+      linkMore.classList.remove('hide')
+      linksParent.classList.remove('show')
     })
   }
 
   show()
+  hide()
 }
 
 export default showMore

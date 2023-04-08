@@ -1,0 +1,13 @@
+.container-title {
+  background: linear-gradient(270deg, $btnColorText 0%, $bgColor 98.61%);
+  border-top: 1px solid $titleBorder;
+  &--second {
+    margin-top: 50px;
+  }
+  .subtitle {
+    font-size: 16px;
+    color: $textColorLight;
+    text-transform: uppercase;
+    padding: 15px 0 15px 30px;
+  }
+}

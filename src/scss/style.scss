@@ -3,6 +3,7 @@
 
 @import './promo';
 @import './menu';
+@import './subtitle';
 @import './content';
 @import './navigation';
 @import './header';
@@ -11,6 +12,7 @@
 @import './price';
 @import './footer';
 @import './modal';
+@import './overlay';
 @import './media';
 
 * {
@@ -20,6 +22,5 @@
 }
 
 body {
-  background-color: $bgColor;
   color: $textColor;
 }

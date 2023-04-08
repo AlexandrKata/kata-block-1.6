@@ -31,7 +31,9 @@
 
           <ul class="menu-list">
             <li class="menu-list__item"><a href="#">Ремонт техники</a></li>
-            <li class="menu-list__item"><a href="#">Услуги и сервисы</a></li>
+            <li class="menu-list__item active"
+              ><a href="#">Услуги и сервисы</a></li
+            >
             <li class="menu-list__item"
               ><a href="#">Корпоративным клиентам</a></li
             >
@@ -143,9 +145,12 @@
               Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
               очередь, советуют нас родным и близким. <br /><br />
 
-              <div class="tabs-link">
-                <a href="#"
+              <div class="tabs-links">
+                <a class="tabs-links__more" href="#"
                   ><img src="./img/expand.svg" alt="icon" />Читать далее</a
+                >
+                <a class="tabs-links__hide hide" href="#"
+                  ><img src="./img/expand.svg" alt="icon" />Скрыть</a
                 >
               </div>
             </div>
@@ -154,7 +159,9 @@
         </section>
 
         <section class="repair">
-          <h2 class="repair__title">Ремонт техники различных брендов</h2>
+          <div class="container-title">
+            <h2 class="subtitle">Ремонт техники различных брендов</h2>
+          </div>
 
           <div class="swiper-brand">
             <div class="swiper-wrapper">
@@ -174,7 +181,7 @@
                   alt=""
               /></div>
               <div class="swiper-slide">
-                <img src="./img/ViewSonic.png" alt="" /><img
+                <img src="./img/Acer.png" alt="" /><img
                   src="./img/go.svg"
                   alt=""
                 />
@@ -330,40 +337,31 @@
             >
           </div>
 
-          <h2 class="repair__title">Ремонт различных видов техники</h2>
+          <div class="container-title container-title--second">
+            <h2 class="subtitle">Ремонт различных видов техники</h2>
+          </div>
 
           <div class="swiper-tech">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"
-                ><img class="tech" src="./img/laptop.png" alt="" /><img
-                  class="icon"
-                  src="./img/go.svg"
-                  alt=""
+              <div class="swiper-slide">
+                <h3 class="">Ремонт ноутбуков</h3>
+                <img class="icon" src="./img/go.svg" alt=""
               /></div>
               <div class="swiper-slide"
-                ><img class="tech" src="./img/tablet.png" alt="" /><img
-                  class="icon"
-                  src="./img/go.svg"
-                  alt=""
-              /></div>
-              <div class="swiper-slide"
-                ><img class="tech" src="./img/pk.png" alt="" /><img
-                  class="icon"
-                  src="./img/go.svg"
-                  alt=""
+                ><h3 class="">Ремонт планшетов</h3>
+                <img class="icon" src="./img/go.svg" alt=""
               /></div>
               <div class="swiper-slide">
-                <img class="tech" src="./img/monitor.png" alt="" /><img
-                  class="icon"
-                  src="./img/go.svg"
-                  alt=""
-                />
+                <h3 class="">Ремонт ПК</h3>
+                <img class="icon" src="./img/go.svg" alt=""
+              /></div>
+              <div class="swiper-slide">
+                <h3 class="">Ремонт мониторов</h3>
+                <img class="icon" src="./img/go.svg" alt="" />
               </div>
-              <div class="swiper-slide"
-                ><img class="tech" src="./img/telephone.png" alt="" /><img
-                  class="icon"
-                  src="./img/go.svg"
-                  alt=""
+              <div class="swiper-slide">
+                <h3 class="">Ремонт телефонов</h3
+                ><img class="icon" src="./img/go.svg" alt=""
               /></div>
             </div>
 
@@ -374,12 +372,6 @@
             <div class="tech-card">
               <h3 class="tech-card__title">Ремонт ноутбуков </h3>
               <div class="tech-wrapper">
-                <a class="tech-card__link" href="#"
-                  ><img
-                    class="tech-card__img"
-                    src="./img/laptop.png"
-                    alt="laptop"
-                /></a>
                 <a class="tech-card__link-more" href="#"
                   ><img class="tech-card__icon" src="./img/go.svg" alt="icon"
                 /></a>
@@ -389,12 +381,6 @@
             <div class="tech-card">
               <h3 class="tech-card__title">Ремонт планшетов </h3>
               <div class="tech-wrapper">
-                <a class="tech-card__link" href="#"
-                  ><img
-                    class="tech-card__img"
-                    src="./img/tablet.png"
-                    alt="tablet"
-                /></a>
                 <a class="tech-card__link-more" href="#"
                   ><img class="tech-card__icon" src="./img/go.svg" alt="icon"
                 /></a>
@@ -404,9 +390,6 @@
             <div class="tech-card">
               <h3 class="tech-card__title">Ремонт ПК </h3>
               <div class="tech-wrapper">
-                <a class="tech-card__link" href="#"
-                  ><img class="tech-card__img" src="./img/pk.png" alt="pk"
-                /></a>
                 <a class="tech-card__link-more" href="#"
                   ><img class="tech-card__icon" src="./img/go.svg" alt="icon"
                 /></a>
@@ -416,12 +399,6 @@
             <div class="tech-card">
               <h3 class="tech-card__title">Ремонт мониторов </h3>
               <div class="tech-wrapper">
-                <a class="tech-card__link" href="#"
-                  ><img
-                    class="tech-card__img"
-                    src="./img/monitor.png"
-                    alt="monitor"
-                /></a>
                 <a class="tech-card__link-more" href="#"
                   ><img class="tech-card__icon" src="./img/go.svg" alt="icon"
                 /></a>
@@ -431,12 +408,6 @@
             <div class="tech-card">
               <h3 class="tech-card__title">Ремонт телефонов </h3>
               <div class="tech-wrapper">
-                <a class="tech-card__link" href="#"
-                  ><img
-                    class="tech-card__img"
-                    src="./img/telephone.png"
-                    alt="telephone"
-                /></a>
                 <a class="tech-card__link-more" href="#"
                   ><img class="tech-card__icon" src="./img/go.svg" alt="icon"
                 /></a>
@@ -456,7 +427,9 @@
         </section>
 
         <section class="price">
-          <h2 class="price__title">Цены на услуги</h2>
+          <div class="container-title">
+            <h2 class="subtitle">Цены на услуги</h2>
+          </div>
 
           <div class="swiper-price">
             <div class="swiper-wrapper">
@@ -566,97 +539,72 @@
           </div>
 
           <div class="container-price">
-            <div class="price-card">
-              <div class="price-card__name"
-                ><h3 class="price-card__subtitle first-card"
-                  >Ремонтные услуги</h3
-                >Диагностика</div
-              >
-              <div class="price-card__price">
-                <h3 class="price-card__subtitle first-card">Цена</h3
-                >Бесплатно</div
-              >
-              <div class="price-card__time"
-                ><h3 class="price-card__subtitle first-card">Срок</h3>30
-                мин</div
-              >
-              <div class="price-card__button first-button"
-                ><button
-                  >Заказать<a href="#"
-                    ><img src="./img/goside.svg" alt="icon" /></a></button
-              ></div>
+            <div class="wrapper-title">
+              <h2 class="wrapper-title--first">Ремонтные услуги</h2>
+              <h2 class="wrapper-title--second">Цена</h2>
+              <h2 class="wrapper-title--third">Срок</h2>
             </div>
+            <div class="wrapper-price-cards">
+              <div class="price-card">
+                <div class="price-card__name">Диагностика</div>
+                <div class="price-card__price"> Бесплатно</div>
+                <div class="price-card__time">30 мин</div>
+                <div class="price-card__button"
+                  ><button
+                    >Заказать<a href="#"
+                      ><img src="./img/goside.svg" alt="icon" /></a></button
+                ></div>
+              </div>
 
-            <div class="price-card">
-              <div class="price-card__name"
-                ><h3 class="price-card__subtitle">Ремонтные услуги</h3>Замена
-                дисплея</div
-              >
-              <div class="price-card__price">
-                <h3 class="price-card__subtitle">Цена</h3>1 000 ₽</div
-              >
-              <div class="price-card__time"
-                ><h3 class="price-card__subtitle">Срок</h3>30-120 мин</div
-              >
-              <div class="price-card__button"
-                ><button
-                  >Заказать<a href="#"
-                    ><img src="./img/goside.svg" alt="icon" /></a></button
-              ></div>
-            </div>
+              <div class="price-card">
+                <div class="price-card__name">Замена дисплея</div>
+                <div class="price-card__price"> 1 000 ₽</div>
+                <div class="price-card__time">30-120 мин</div>
+                <div class="price-card__button"
+                  ><button
+                    >Заказать<a href="#"
+                      ><img src="./img/goside.svg" alt="icon" /></a></button
+                ></div>
+              </div>
 
-            <div class="price-card">
-              <div class="price-card__name"
-                ><h3 class="price-card__subtitle">Ремонтные услуги</h3>Замена
-                полифонического динамика</div
-              >
-              <div class="price-card__price">
-                <h3 class="price-card__subtitle">Цена</h3>1 000 ₽</div
-              >
-              <div class="price-card__time"
-                ><h3 class="price-card__subtitle">Срок</h3>30-120 мин</div
-              >
-              <div class="price-card__button"
-                ><button
-                  >Заказать<a href="#"
-                    ><img src="./img/goside.svg" alt="icon" /></a></button
-              ></div>
-            </div>
+              <div class="price-card">
+                <div class="price-card__name"
+                  >Замена полифонического динамика</div
+                >
+                <div class="price-card__price">1 000 ₽</div>
+                <div class="price-card__time">30-120 мин</div>
+                <div class="price-card__button"
+                  ><button
+                    >Заказать<a href="#"
+                      ><img src="./img/goside.svg" alt="icon" /></a></button
+                ></div>
+              </div>
 
-            <div class="price-card">
-              <div class="price-card__name"
-                ><h3 class="price-card__subtitle">Ремонтные услуги</h3
-                >Тестирование с выдачей технического заключения</div
-              >
-              <div class="price-card__price">
-                <h3 class="price-card__subtitle">Цена</h3>1 000 ₽</div
-              >
-              <div class="price-card__time"
-                ><h3 class="price-card__subtitle">Срок</h3>30-120 мин</div
-              >
-              <div class="price-card__button"
-                ><button
-                  >Заказать<a href="#"
-                    ><img src="./img/goside.svg" alt="icon" /></a></button
-              ></div>
-            </div>
+              <div class="price-card">
+                <div class="price-card__name"
+                  >Тестирование с выдачей технического заключения</div
+                >
+                <div class="price-card__price"> 1 000 ₽</div>
+                <div class="price-card__time">30-120 мин</div>
+                <div class="price-card__button"
+                  ><button
+                    >Заказать<a href="#"
+                      ><img src="./img/goside.svg" alt="icon" /></a></button
+                ></div>
+              </div>
 
-            <div class="price-card">
-              <div class="price-card__name"
-                ><h3 class="price-card__subtitle">Ремонтные услуги</h3>Замена
-                программного обеспечения</div
-              >
-              <div class="price-card__price">
-                <h3 class="price-card__subtitle">Цена</h3>1 000 ₽</div
-              >
-              <div class="price-card__time"
-                ><h3 class="price-card__subtitle">Срок</h3>30-120 мин</div
-              >
-              <div class="price-card__button"
-                ><button
-                  >Заказать<a href="#"
-                    ><img src="./img/goside.svg" alt="icon" /></a></button
-              ></div>
+              <div class="price-card">
+                <div class="price-card__name"
+                  >Замена программного обеспечения</div
+                >
+                <div class="price-card__price"> 1 000 ₽</div>
+                <div class="price-card__time">30-120 мин</div>
+                <div class="price-card__button"
+                  ><button
+                    >Заказать<a href="#"
+                      ><img src="./img/goside.svg" alt="icon" /></a></button
+                ></div>
+              </div>
             </div>
           </div>
           <article class="price-decr">
@@ -684,8 +632,7 @@
             не является публичной офертой</a
           >
         </footer>
-
-        <div class="overlay hide">
+        <div class="overlay-modal hide">
           <div class="modal hide" data-modal="feedback">
             <div class="modal__close"
               ><img src="./img/burgerclose.svg" alt=""
@@ -747,6 +694,8 @@
           </div>
         </div>
       </div>
+
+      <div class="overlay hide"> </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

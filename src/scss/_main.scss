@@ -1,6 +1,7 @@
 .container-content {
+  background: $bgColor;
   .main {
-    padding-top: 15px;
+    padding: 15px 30px 0 30px;
 
     .tabs-list {
       list-style-type: none;
@@ -14,7 +15,7 @@
         white-space: nowrap;
 
         &.tabs-list__item--active {
-          background: $bgColor;
+          background: $btnColorText;
           border: 2px solid $borderActive;
           border-radius: 6px;
         }
@@ -31,22 +32,30 @@
       display: flex;
       justify-content: space-between;
       position: relative;
-      &.show {
-        max-height: 100%;
-      }
+      gap: 40px;
 
       .tabs-text {
-        padding-right: 20px;
         min-width: 50%;
         &.show {
           max-height: 100%;
         }
       }
 
-      .tabs-link {
+      .tabs-links {
         display: flex;
-        &.hide {
-          display: none;
+        &__more {
+          &.hide {
+            display: none;
+          }
+        }
+
+        &__hide {
+          &.hide {
+            display: none;
+          }
+          img {
+            rotate: 180deg;
+          }
         }
 
         a {
@@ -63,8 +72,9 @@
         min-width: 50%;
 
         img {
-          height: 95%;
-          width: 95%;
+          display: block;
+          width: 90%;
+          margin: 0;
         }
       }
     }

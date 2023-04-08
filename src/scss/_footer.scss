@@ -1,8 +1,10 @@
 .container-content {
   .footer {
-    padding-top: 80px;
+    padding: 20px 30px 20px 30px;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid $titleBorder;
+    margin-top: 50px;
     a {
       text-decoration: none;
       color: $textColorLight;

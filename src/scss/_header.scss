@@ -4,12 +4,12 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 40px 30px 0 30px;
 
     &__title {
       font-family: 'Bold';
       font-size: 28px;
       margin-left: 0;
-      padding-left: 30px;
 
       &::before {
         content: '';
@@ -17,7 +17,7 @@
         height: 40px;
         border-radius: 2px;
         position: absolute;
-        top: 0px;
+        top: 40px;
         left: 0px;
       }
     }
